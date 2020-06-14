@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="DANG NHAP UNG DUNG" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:completionThreshold="1"
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Username:" />
+
+        <EditText
+            android:completionThreshold="1"
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:hint="PASSWORD" />
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/cb_ShowPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Show Password" />
+
+    <Button
+        android:id="@+id/thoat"
+        android:layout_width="140dp"
+        android:layout_height="68dp"
+        android:text="DANG NHAP" />
+
+</LinearLayout>

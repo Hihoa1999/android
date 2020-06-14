@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16px"
+
+    tools:context=".Dangki">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@drawable/anhbia" />
+    <AutoCompleteTextView
+        android:completionThreshold="1"
+        android:id="@+id/taikhoan"
+        android:hint="Tai khoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="Mat khau"
+        android:padding="20px"
+        android:id="@+id/Autocomple1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"/>
+    <EditText
+        android:id="@+id/nhaplai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:hint="Nhap lai mat khau" />
+    <AutoCompleteTextView
+        android:completionThreshold="1"
+        android:id="@+id/email"
+        android:hint="Tai khoan email "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <MultiAutoCompleteTextView
+        android:id="@+id/Noio"
+        android:hint="Noi o"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:onClick="showInput"
+
+        android:padding="10px"
+        android:text="Show Input" />
+    <Button
+        android:id="@+id/trove"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10px"
+        android:text="Tro ve" />
+
+
+</LinearLayout>
